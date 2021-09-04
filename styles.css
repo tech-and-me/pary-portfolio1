@@ -129,14 +129,22 @@ h1{
 }
 
 
-
 /* main{
     background: rgba(69, 86, 125, 1);
 } */
 .section3 img{
+    display: block;
     height: auto;
     width: 100%;
     object-fit: cover;
+}
+
+
+.caption{
+    background-color:rgb(12, 125, 153);
+    color: white;
+    padding: 10px;
+    font-size: 2rem;
 }
 
 .section4{
