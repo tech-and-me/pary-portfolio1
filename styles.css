@@ -101,8 +101,8 @@ h1{
     display: grid;
     width: 100%;
     background-color:rgba(69, 86, 125, 1);
-    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
-    gap: 4rem;
+    grid-template-columns: repeat(auto-fit,minmax(500px,2fr));
+    gap: 2rem;
     text-align: center;
     justify-content: space-around;
     padding-left: 20px;
@@ -141,10 +141,10 @@ h1{
 
 
 .caption{
-    background-color:rgb(12, 125, 153);
+    background-color:rgb(19, 130, 145);
     color: white;
-    padding: 10px;
-    font-size: 2rem;
+    padding: 13px;
+    font-size: 1.7rem;
 }
 
 .section4{
