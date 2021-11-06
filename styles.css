@@ -269,7 +269,7 @@ footer p{
 
 }
 
-
+/* for phone  */
 @media screen and (max-width:480px){
     nav a{
         font-size: 0.8rem;
@@ -291,7 +291,7 @@ footer p{
     }
 
     footer p{
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 
     .section1, .section4{
