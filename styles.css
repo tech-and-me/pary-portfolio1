@@ -181,8 +181,15 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:rgb(11, 20, 27);
+    /* background-color:rgb(11, 20, 27); */
     height:200px;    
+
+
+    background-position:center center;
+    background-attachment: fixed;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    overflow: hidden;
     
 }
 
@@ -201,7 +208,7 @@ h1{
 footer{
     position:relative;
     height: 50px;
-    background-color: rgb(34, 27, 27);
+    background-color:rgb(7, 34, 68);
 }
 
 footer p{
@@ -221,9 +228,11 @@ footer p{
 /* Media Query */
 /* For desktop devices  */
 @media (min-width: 1025px) {
-    .section1{
+    .section1, .section4{
         background-image: url(./bg4.jfif)!important;
     }
+
+  
 
 }
 
@@ -254,7 +263,7 @@ footer p{
         font-size: 0.8rem;
     }
 
-    .section1{
+    .section1, .section4{
         background-image: url(./bg4.jfif)!important;
     }
 
@@ -285,7 +294,7 @@ footer p{
         font-size: 0.8rem;
     }
 
-    .section1{
+    .section1, .section4{
         background-image: url(./bg4.jfif)!important;
     }
 
