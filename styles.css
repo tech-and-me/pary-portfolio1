@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color:white;
+    /* color:white; */
     /* background-color :rgb(36, 36, 34); */
     /* background-color: rgba(69, 86, 125, 1); */
     /* color: white; */
@@ -11,6 +11,8 @@
 
 body, main, footer, nav{
     position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 .yellow-text{
@@ -18,8 +20,9 @@ body, main, footer, nav{
 }
 
 nav{
-    background-color: rgb(19, 16, 16);
-    padding: 1rem;
+    background-color:transparent;
+    padding: 2rem;
+    margin-bottom: 2rem;
     position:fixed;
     z-index: 10;
     max-height: 70px;    
@@ -57,9 +60,19 @@ nav a:hover{
     position: relative;
     display: block;
     width:100%;
-    min-height:400px;
+    /* height: auto; */
+    min-height:700px;
     background-color :rgb(36, 36, 34);
     text-align: center;   
+    /* background-image: url(./PharyAtOperaHouseCut.jpg); */
+    /* background-size: 50%; */
+    background-position:center center;
+    background-attachment: fixed;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
+    
 }
 
 .sect1-content{
@@ -88,11 +101,13 @@ h1{
     position: relative;
     display: block;
     /* width: 100%; */
-    height:250px;
-    background-color :rgb(49, 45, 49);
+    height:150px;
+    background-color:rgb(7, 34, 68);
     text-align: center;   
     /* margin-top: 0; */
 }
+
+
 
 .sect2-content{
     position: absolute;
@@ -101,27 +116,32 @@ h1{
     vertical-align: center;
     top: 50%;
     transform: translateY(-50%);
-    color: white;
     font-size: 3rem;
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-thickness: 5%;
+    color:white;
 }
 
 .section3{
     display: grid;
-    /* width: 100%; */
-    background-color :rgb(49, 45, 49);
-    grid-template-columns: repeat(auto-fit,minmax(520px,2fr));
+    background-color:rgb(7, 34, 68);
+    grid-template-columns: repeat(auto-fit,minmax(360px,2fr));
     gap: 2rem;
     text-align: center;
     justify-content: space-around;
-    padding-left: 20px;
-    padding-right: 20px;
-    /* padding-bottom: 5rem; */
-    margin:0 auto;
-    /* margin-bottom: 6rem; */
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 4rem;
+    margin-right: auto;
+    margin-left: auto;
+ 
 }
+
+.pic{
+    margin:0.5rem;
+}
+
 
 .heading2{
     grid-area: cell1;
@@ -145,6 +165,8 @@ h1{
     height: auto;
     width: 100%;
     object-fit: cover;
+    margin-right:auto;
+    margin-left: auto;
 }
 
 
@@ -152,49 +174,62 @@ h1{
     background-color:rgb(19, 130, 145);
     color: white;
     padding: 13px;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 }
 
 .section4{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:rgba(69, 86, 125, 1);
+    background-color:rgb(11, 20, 27);
     height:200px;    
     
 }
 
 
 .button{
-    /* position:absolute; */
     font-weight: bolder;
     font-size: 1.5rem;
-    background-color :rgb(34, 29, 29);
-    color: white;
+    background-color :rgb(236, 220, 74);
+    color: rgb(7, 7, 7);
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
-    
 } 
 
 
 footer{
-    margin-top: 20px;
-    margin-bottom: 10px;
+    position:relative;
+    height: 50px;
+    background-color: rgb(34, 27, 27);
 }
 
 footer p{
-    text-align: center;
+    color:white;
     font-style:italic;
     font-weight: bolder;
-    
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 
 
 /* Media Query */
+/* For desktop devices  */
+@media (min-width: 1025px) {
+    .section1{
+        background-image: url(./bg4.jfif)!important;
+    }
 
-@media screen and (min-width:768px) and (max-width:1023px){
+}
+
+
+/* For tablets */
+@media screen and (min-width:481px) and (max-width:1024px){
     nav a{
         font-size: 1rem;
     }
@@ -207,10 +242,26 @@ footer p{
         font-size: 2rem;
     }
 
+    .caption{
+        font-size: 1.2rem;
+    }
+
+    .section1 p{
+        font-size:1.5rem;
+    }
+
+    footer p{
+        font-size: 0.8rem;
+    }
+
+    .section1{
+        background-image: url(./bg4.jfif)!important;
+    }
+
 }
 
 
-@media screen and (max-width:767px){
+@media screen and (max-width:480px){
     nav a{
         font-size: 0.8rem;
     }
@@ -222,5 +273,21 @@ footer p{
     .sect2-content h3{
         font-size: 1.5rem;
     }
+    .caption{
+        font-size: 1rem;
+    }
+
+    .section1 p{
+        font-size:1.2rem;
+    }
+
+    footer p{
+        font-size: 0.8rem;
+    }
+
+    .section1{
+        background-image: url(./bg4.jfif)!important;
+    }
+
 
 }
