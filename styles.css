@@ -125,9 +125,6 @@ h1{
     top: 50%;
     transform: translateY(-50%);
     font-size: 3rem;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness: 5%;
     color:white;
 }
 
@@ -156,16 +153,26 @@ h1{
     position: relative ;
     }
 
-.heading2 h3{
+.sect2-content h3{
     color: white;
-    width: 100%;
+    width: 40%;
+    margin-bottom: 2rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 0.8rem 2.5rem;
+    position:relative;
+
     height: 100%;
     margin-top:40px;
     font-size: 3rem;
-    text-decoration: underline;
+    outline-style: solid;
+    outline-color: white;
+    outline-width: 5px;
+    color: yellow;
+    /* text-decoration: none;
     text-decoration-color: white;
     text-decoration-thickness: 2px;
-    text-underline-offset: 10px;
+    text-underline-offset: 10px; */
 }
 
 .section3 img{
@@ -279,7 +286,12 @@ footer p{
     }
 
     .sect2-content h3{
-        font-size: 2rem;
+        font-size: 1.5rem;
+        line-height: 35px;
+        width: 70%;
+        padding:0.8rem;
+        outline-width: 2px;
+        text-transform: uppercase;
     }
 
 
@@ -293,7 +305,7 @@ footer p{
 /* for phone  */
 @media screen and (max-width:480px){
     nav a{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     h1{
@@ -322,7 +334,14 @@ footer p{
 
     .sect2-content h3{
         font-size: 1.5rem;
+        line-height: 35px;
+        width: 90%;
+        padding:0.8rem;
+        outline-width: 2px;
+        text-transform: uppercase;
     }
+
+
     .caption{
         font-size: 1rem;
     }
